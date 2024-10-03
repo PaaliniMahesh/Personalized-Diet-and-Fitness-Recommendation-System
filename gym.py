@@ -29,7 +29,7 @@ def add_bg_from_local(image_path):
     )
 
 # Path to background image
-image_path = r"C:\Users\mahes\OneDrive\Pictures\baf.avif"
+image_path = r"baf.avif"
 
 # Add background to Streamlit app
 bg_image = get_base64_image(image_path)
@@ -50,7 +50,7 @@ def go_to_page(page_name):
 # Home Page
 if st.session_state['page'] == 'home':
     # Load the first image
-    image1 = Image.open(r"C:\Users\mahes\OneDrive\Pictures\yoga.webp")  # Replace with the correct path
+    image1 = Image.open(r"yoga.webp")  # Replace with the correct path
 
     # Center the title
     st.markdown("<h1 style='text-align: center;'>Hello And Welcome</h1>", unsafe_allow_html=True)
@@ -63,7 +63,7 @@ if st.session_state['page'] == 'home':
     st.markdown("<h3 style='text-align: center;'>About Us</h3>", unsafe_allow_html=True)
 
     # Load and display another image (optional)
-    image2 = Image.open(r"C:\Users\mahes\OneDrive\Pictures\a.jpg")  # Replace with the correct path
+    image2 = Image.open(r"a.jpg")  # Replace with the correct path
     st.image(image2, caption='Our Team', use_column_width=True)
 
     # Write some content
