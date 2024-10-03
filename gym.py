@@ -118,10 +118,10 @@ if st.session_state['page'] == 'recommendation':
     st.title("Fitness Recommendation System")
 
     # Load the KMeans model and scaler
-    with open(r"C:\Users\mahes\kmeans_model.pkl", 'rb') as file:
+    with open(r"kmeans_model.pkl", 'rb') as file:
         kmeans = pickle.load(file)
 
-    with open(r"C:\Users\mahes\scaler.pkl", 'rb') as file:
+    with open(r"scaler.pkl", 'rb') as file:
         scaler = pickle.load(file)
 
     # Function to recommend diet and exercise
